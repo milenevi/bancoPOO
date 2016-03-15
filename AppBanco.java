@@ -6,6 +6,7 @@ import java.util.Scanner;
  * @brief Classe AppBanco
  * @author Milene Vieira <milene_vi@hotmail.com>  
  * @since   13/03/2016
+ * 
  */
 public class AppBanco {
 
