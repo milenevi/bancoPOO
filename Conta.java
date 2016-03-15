@@ -16,11 +16,6 @@ public class Conta {
         this.codigo = codigo;
         this.nomeCliente = nomeCliente;
         this.tipo = tipo;
-        if (tipo == 'c') {
-            this.saldo = 100;
-        } else if (tipo == 'p') {
-            this.saldo = 50;
-        }
     }
 
     public int getCodigo() {
