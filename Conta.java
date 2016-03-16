@@ -2,28 +2,35 @@ package banco1;
 
 /**
  * @brief Classe Conta
- * @author Milene Vieira <milene_vi@hotmail.com>
+ * @author Milene Vieira e Fabiana Barreto
  * @since 13/03/2016
  */
 public class Conta {
 
-    private int codigo;
+    private String numeroConta;
     private String nomeCliente;
     private char tipo;
     private double saldo;
-
-    public Conta(int codigo, String nomeCliente, char tipo) {
-        this.codigo = codigo;
+    private Agencia agencia = new Agencia();
+    
+    public Conta() {
+    
+    }
+    
+    public Conta(String numeroConta, String nomeCliente, char tipo) {
+        this.numeroConta = numeroConta;
         this.nomeCliente = nomeCliente;
         this.tipo = tipo;
     }
 
-    public int getCodigo() {
-        return codigo;
+
+
+    public String getNumeroConta() {
+        return numeroConta;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setNumeroConta(String codigo) {
+        this.numeroConta = codigo;
     }
 
     public String getNomeCliente() {
@@ -67,7 +74,7 @@ public class Conta {
     }
 
     public void emitirSaldo() {
-        System.out.println("Numero: " + codigo);
+        System.out.println("Numero: " + numeroConta);
         System.out.println("Cliente: " + nomeCliente);
         System.out.println("Conta: " + tipo);
         System.out.println("Saldo: " + saldo);
